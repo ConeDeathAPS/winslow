@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Winslow Salon</title>
+	<link rel="stylesheet" type="text/css" href="../Static/Stylesheets/index_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".main_container").fadeIn('fast');
+		$(".image_container").fadeIn('fast');
+	});
+	$(window).resize(function() {
+		console.log("moving...");
+		if (window.innerWidth === 1920) {
+			$(".link1").css({left: 25+"%"}); 
+			$(".link2").css({right: 23+"%"}); 
+		} else if (window.innerWidth < 900) {
+			$(".link1").css({
+				left: (window.innerWidth/100)*9+"px"
+				}); 
+			$(".link2").css({
+				right: (window.innerWidth/100)*4+"px"
+				}); 
+		} else {
+			$(".link1").css({
+				left: (.88*(window.innerWidth/100))*25+"px"
+				}); 
+			$(".link2").css({
+				right: (.88*(window.innerWidth/100))*23+"px"
+				}); 			
+		}
+
+	});
+	</script>
+<body>
+<div class="main_container" hidden>
+	<a class="link1" href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3>Fan & Follow</h3></a>	
+	<a class="link2" href="/welcome.html"><h3>Enter & Experience</h3></a>
+</div>
+<div class="image_container" hidden>
+	<img src="../Static/Images/pic_row.png" alt="pictures">
+</div>
+<div class="footer">
+	<ul>
+		<li>609 Market St.</li>
+		<li><img src="../Static/Images/bullet.png" alt="bullet"></li>
+		<li>Kirland, WA</li>
+		<li><img src="../Static/Images/bullet.png" alt="bullet"></li>
+		<li>425-629-3686</li>
+	</ul>
+</div>
+</body>
+</html>
