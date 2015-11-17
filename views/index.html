@@ -4,42 +4,49 @@
 	<meta charset="UTF-8">
 	<title>Winslow Salon</title>
 	<link rel="stylesheet" type="text/css" href="../Static/Stylesheets/index_style.css">
+	<link rel="stylesheet" type="text/css" href="../Static/Stylesheets/global_style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$(".main_container").fadeIn('fast');
-		$(".image_container").fadeIn('fast');
-	});
-	$(window).resize(function() {
-		console.log("moving...");
-		if (window.innerWidth === 1920) {
-			$(".link1").css({left: 25+"%"}); 
-			$(".link2").css({right: 23+"%"}); 
-		} else if (window.innerWidth < 900) {
-			$(".link1").css({
-				left: (window.innerWidth/100)*9+"px"
-				}); 
-			$(".link2").css({
-				right: (window.innerWidth/100)*4+"px"
-				}); 
-		} else {
-			$(".link1").css({
-				left: (.88*(window.innerWidth/100))*25+"px"
-				}); 
-			$(".link2").css({
-				right: (.88*(window.innerWidth/100))*23+"px"
-				}); 			
-		}
-
-	});
+		$(".lander").fadeIn(750).delay(1000).fadeOut(500, function() {
+			 $(".main_container").fadeIn('750');
+		});
+	})
 	</script>
+</head>
 <body>
-<div class="main_container" hidden>
-	<a class="link1" href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3>Fan & Follow</h3></a>	
-	<a class="link2" href="/welcome.html"><h3>Enter & Experience</h3></a>
+<div class="header">
+	<div class="inner_container">
+		<img src="../Static/Images/logo.png" alt="logo">
+		<h3>...a boutique salon west of market street.</h3>
+	</div>
 </div>
-<div class="image_container" hidden>
-	<img src="../Static/Images/pic_row.png" alt="pictures">
+<div class="lander" hidden>
+	<img src="../Static/Images/index_pic.png" alt="welcome_picture">
+</div>
+<div class="inner_container main_container" hidden>
+	<div class="content">
+		<div id="sidebar">
+			<a href="#"><h3>Services</h3></a>
+			<a href="#"><h3>Stylists</h3></a>
+			<a href="#"><h3>Scheduling</h3></a>
+			<a href="#"><h3>Products</h3></a>
+			<a href="#"><h3>Promotions</h3></a>
+			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3>Press & Fans</h3></a>
+			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3><i class="fa fa-facebook-official fa-2x"></i></h3></a>
+		</div>
+		<div class="inner_content">
+			<h1>Welcome to Winslow Salon...</h1>
+			<p>Winslow is a beautiful boutique salon located in downtown Kirkland, Washington on Market Street.</p>
+			<p>Out stylists have come together from various places and experiences, but with the same common thought:</p>
+				<div class="quote">
+					<p><i>To provide our clients with the highest level of service, style that focuses on the individual, and an atmosphere of comfortable luxury.</i></p>
+					<p><i>Our clients are the reason we are here - <br><span class="indent">without you, this wouldn't be possible!</span></i></p>
+				</div>
+		</div>
+	</div>
+	<img id="picture_row" src="../Static/Images/pic_row.png" alt="pictures">
 </div>
 <div class="footer">
 	<ul>
