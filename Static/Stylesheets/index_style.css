@@ -1,89 +1,141 @@
-.inner_container {
-	width: 60%;
-	margin: 0px auto;
-}
+/*INITIAL PICTURE CSS*/
 .lander {
 	position: relative;
 	top: 134px;
 	width: 900px;
 	margin: 0 auto;
 }
+/*DEFINES ALL CONTENT*/
+.inner_container {
+	width: 60%;
+	margin: 0px auto;
+}
+/*DEFINES TOP ROW OF PICTURES*/
+#picture_row {
+	display: block;
+	width: 100%;
+	margin: 0px auto;
+}
+/*DEFINES THE MAIN CONTENT ONLY*/ 
 .main_container {
 	position: relative;
 	top: 98px;
 	z-index: 1;
 	box-shadow: 4px 8px 7px 0px black;
 }
-#sidebar {
-	width: 20%;
-	margin-top: 3%;
-	display: inline-block;
-	list-style-type: none;
-}
-#sidebar i {
-	color: white;
-	text-align: center;
-}
-#sidebar i:hover {
-	color: grey;
-}
-#sidebar h3 {
-	margin: 30px 0px;
-	text-align: center;
-	color: white;
-	-webkit-transition-duration: 300ms;
-	-moz-transition-duration: 300ms;
-	-o-transition-duration: 300ms;
-	transition-duration: 300ms;
-	font-size: 1.6em;
-}
-#sidebar h3:last-child {
-	margin-top: 15px;
-}
-#sidebar h3:hover {
-	-webkit-transition-duration: 300ms;
-	-moz-transition-duration: 300ms;
-	-o-transition-duration: 300ms;
-	transition-duration: 300ms;
-	-webkit-transform: scale(1.3);
-	-moz-transform: scale(1.3);
-	-o-transform: scale(1.3);
-	transform: scale(1.3);
-	-webkit-transition-duration: 300ms;
-	-moz-transition-duration: 300ms;
-	-o-transition-duration: 300ms;
-	transition-duration: 300ms;
-}
-.content {
-	background-image: url("../Images/background.png");
-	background-size: 900px 450px;
-	background-repeat: no-repeat;
-	height: 550px;
-	border-bottom: 2px solid rgba(225, 49, 0, 1);
-}
-.inner_content {
-	display: inline-block;
-	width: 74%;
-	padding: 2% 2% 0% 2%;
-	vertical-align: top;
-	margin-top: 2%;
-	box-sizing: border-box;	
-	background-color: rgba(0, 0, 0, .25);
-}
-	.inner_content p {
-		margin-bottom: 20px;
-		color: white;
-		font-size: 2em;
-		font-weight: bold;
+	#sidebar {
+		width: 20%;
+		margin-top: 3%;
+		display: inline-block;
+		list-style-type: none;
 	}
-	.quote {
-		display: block;
-		margin: 0 auto;
-		width: 80%;
+		#sidebar i {
+			color: white;
+			text-align: center;
+		}
+			#sidebar i:hover {
+				color: grey;
+			}
+		#sidebar h3 {
+			margin: 30px 0px;
+			text-align: center;
+			color: white;
+			-webkit-transition-duration: 300ms;
+			-moz-transition-duration: 300ms;
+			-o-transition-duration: 300ms;
+			transition-duration: 300ms;
+			font-size: 1.6em;
+		}
+			#sidebar h3:last-child {
+				margin-top: 15px;
+			}
+			#sidebar h3:hover {
+				-webkit-transition-duration: 300ms;
+				-moz-transition-duration: 300ms;
+				-o-transition-duration: 300ms;
+				transition-duration: 300ms;
+				-webkit-transform: scale(1.3);
+				-moz-transform: scale(1.3);
+				-o-transform: scale(1.3);
+				transform: scale(1.3);
+				-webkit-transition-duration: 300ms;
+				-moz-transition-duration: 300ms;
+				-o-transition-duration: 300ms;
+				transition-duration: 300ms;
+			}
+/*DEFINES MAIN WELCOME PARAGRAPH*/
+	.content {
+		background-image: url("../Images/background.png");
+		background-size: 900px 450px;
+		background-repeat: no-repeat;
+		height: 550px;
+		border-bottom: 2px solid rgba(225, 49, 0, 1);
 	}
-	.indent {
-		padding-left: 80px;
+		.inner_content {
+			display: inline-block;
+			width: 74%;
+			padding: 2% 2% 0% 2%;
+			vertical-align: top;
+			margin-top: 2%;
+			box-sizing: border-box;	
+			background-color: rgba(0, 0, 0, .25);
+		}
+			.inner_content p {
+				margin-bottom: 20px;
+				color: white;
+				font-size: 2em;
+				font-weight: bold;
+			}
+			.quote {
+				display: block;
+				margin: 0 auto;
+				width: 80%;
+			}
+			.indent {
+				padding-left: 80px;
+			}
+/* MOBILE ACCORDION CSS*/
+.accordion {
+	margin-bottom: 198px;
+}
+	.accord_label {
+		background-color: rgba(200, 200, 190, 1);
+		background-size: 100% 100%;
+		text-align: center;
+		color: rgba(81, 53, 24, 1);
+		border-bottom: 4px solid rgba(81, 53, 24, 1);
 	}
+		.accord_label i {
+			-webkit-transition-duration: 300ms;
+			-moz-transition-duration: 300ms;
+			-o-transition-duration: 300ms;
+			transition-duration: 300ms;
+		}
+		.accord_label h1 {
+			font-size: 4em;
+		}
+		.turn {
+			-webkit-transition-duration: 300ms;
+			-moz-transition-duration: 300ms;
+			-o-transition-duration: 300ms;
+			transition-duration: 300ms;
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+	.accord_content {
+		display: none;
+		background-color: rgba(81, 53, 24, 1);
+		box-sizing: border-box;
+		padding: 20px;
+	}
+		.accord_content p {
+			color: white;
+			font-size: 1.5em;
+		}
+/*MEDIA RULES*/
+/*DESKTOP RULES*/
 @media screen and (max-width: 1100px) {
 	.header {
 		height: 100px;
@@ -94,38 +146,9 @@
 	.main_container {
 		top: 105px;
 	}
-	#popout_menu {	
-		float: right;
-		color: white;
-		vertical-align: middle;
-		margin-top: 8px;
-		margin-right: 20px;
-	}
 	.content {
 		background-size: 100% 100%;
-	}
-	#side_menu {
-		border-right: 4px solid rgba(225, 49, 0, 1);
-		overflow: hidden;
-		background-color: rgba(200, 200, 190, 1);
-		position: absolute;
-		left: 0px;
-		height: 100%;
-		width: 40px;
-	}
-	#inner_menu h3 {
-		margin-left: 40px;
-		font-size: 4em;
-	}
-	#inner_menu a {
-		color: rgba(225, 49, 0, 1);
-	}
-	#inner_menu a:hover {
-		color: rgba(81, 53, 24, 1);
-	}
-	#inner_menu li {
-		margin-top: 20px;
-	}
+	}	
 	.inner_content {
 		width: 90%;
 		margin: 20px 50px;
@@ -134,6 +157,7 @@
 		font-size: 3.8vw;
 	}
 }
+/*MOBILE RULES*/
 @media screen and (min-width: 1100px) {
 	.main_container {
 		width: 60%;
@@ -145,48 +169,3 @@
 		margin-left: 10px;
 	}
 }
-#picture_row {
-	display: block;
-	width: 100%;
-	margin: 0px auto;
-}
-/*Accordion CSS*/
-.accordion {
-	margin-bottom: 198px;
-}
-.accord_label {
-	background-color: rgba(200, 200, 190, 1);
-	background-size: 100% 100%;
-	text-align: center;
-	color: rgba(81, 53, 24, 1);
-	border-bottom: 4px solid rgba(81, 53, 24, 1);
-}
-	.accord_label i {
-		-webkit-transition-duration: 300ms;
-		-moz-transition-duration: 300ms;
-		-o-transition-duration: 300ms;
-		transition-duration: 300ms;
-	}
-	.accord_label h1 {
-		font-size: 4em;
-	}
-	.turn {
-		-webkit-transition-duration: 300ms;
-		-moz-transition-duration: 300ms;
-		-o-transition-duration: 300ms;
-		transition-duration: 300ms;
-		-webkit-transform: rotate(180deg);
-		-moz-transform: rotate(180deg);
-		-o-transform: rotate(180deg);
-		transform: rotate(180deg);
-	}
-.accord_content {
-	display: none;
-	background-color: rgba(81, 53, 24, 1);
-	box-sizing: border-box;
-	padding: 20px;
-}
-	.accord_content p {
-		color: white;
-		font-size: 1.5em;
-	}
