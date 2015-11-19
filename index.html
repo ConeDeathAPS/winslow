@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="Winslow Salon" description="A boutique salon west of market street.">
 	<title>Winslow Salon</title>
 	<link rel="stylesheet" type="text/css" href="./Static/Stylesheets/index_style.css">
 	<link rel="stylesheet" type="text/css" href="./Static/Stylesheets/global_style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$(".lander").fadeIn(750).delay(1000).fadeOut(500, function() {
@@ -24,28 +24,18 @@
 				$("#side_menu").animate({width: "40px"}, 300, "swing");
 			})
 		} else {
-			$("#popout_menu").animate({left: "94%"}, 300, "swing");			
-			$("#side_menu").animate({width: "500px"}, 300, "swing", function() {
+			$("#popout_menu").animate({left: "93%"}, 300, "swing");			
+			$("#side_menu").animate({width: "400px"}, 300, "swing", function() {
 				$("#inner_menu").fadeIn('fast');
 			});			
 		}
 	})
-	//MOBILE LISTENERS
-	$(window).on("swiperight", function() {
-		if ($("#side_menu").width() < 50) {
-			$("#popout_menu").toggleClass("turn").removeClass("inactive").animate({left: "94%"}, 300, "swing");
-			$("#side_menu").animate({width: "500px"}, 300, "swing", function() {
-				$("#inner_menu").fadeIn('fast');
-			});
-		}
-	})
-	$(window).on("swipeleft", function() {
-		if ($("#side_menu").width() > 50) {
-			$("#popout_menu").toggleClass("turn").animate({left: "5px"}, 300, "swing");
-			$("#inner_menu").fadeOut('fast', function() {
-				$("#side_menu").animate({width: "40px"}, 300, "swing");
-			});
-		}
+	//accordion code
+	$(document).on("click", ".accord_label", function() {
+		var element = "." + $(this).attr("data-target");
+		console.log(element);
+		$(this).children("i").toggleClass("turn");
+		$(element).slideToggle();
 	})
 	</script>
 </head>
@@ -60,18 +50,8 @@
 	<img src="./Static/Images/index_pic.png" alt="welcome_picture">
 </div>
 <div class="inner_container main_container" hidden>
+	<img id="picture_row" src="./Static/Images/pic_row.png" alt="pictures">
 	<div class="content">
-		<div id="side_menu" class="hide_on_desktop">
-			<ul id="inner_menu" hidden>
-				<li><a href=""><h3>Services</h3></a></li>
-				<li><a href=""><h3>Stylists</h3></a></li>
-				<li><a href=""><h3>Scheduling</h3></a></li>
-				<li><a href=""><h3>Products</h3></a></li>
-				<li><a href=""><h3>Promotions</h3></a></li>
-				<li><a href=""><h3>Press & Fans</h3></a></li>
-			</ul>
-			<i class="fa fa-chevron-right fa-2x inactive" id="popout_menu"></i>
-		</div>
 		<div id="sidebar" class="hide_on_mobile">
 			<a href="#"><h3>Services</h3></a>
 			<a href="#"><h3>Stylists</h3></a>
@@ -83,7 +63,6 @@
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3><i class="fa fa-twitter fa-2x"></i></h3></a>
 		</div>
 		<div class="inner_content">
-			<h1>Welcome to Winslow Salon...</h1>
 			<p>Winslow is a beautiful boutique salon located in downtown Kirkland, Washington on Market Street.</p>
 			<p>Our stylists have come together from various places and experiences, but with the same common thought:</p>
 				<div class="quote">
@@ -92,7 +71,51 @@
 				</div>
 		</div>
 	</div>
-	<img id="picture_row" src="./Static/Images/pic_row.png" alt="pictures">
+
+	<div class="accordion">
+		<div class="accord_label" data-target="accord1">
+			<h1>Services</h1>
+			<i class="fa fa-chevron-down fa-5x"></i>
+		</div>
+		<div class="accord_content accord1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+		</div>
+		<div class="accord_label" data-target="accord2">
+			<h1>Stylists</h1>
+			<i class="fa fa-chevron-down fa-5x"></i>
+		</div>
+		<div class="accord_content accord2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+		</div>		
+		<div class="accord_label" data-target="accord3">
+			<h1>Scheduling</h1>
+			<i class="fa fa-chevron-down fa-5x"></i>
+		</div>
+		<div class="accord_content accord3">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+		</div>
+		<div class="accord_label" data-target="accord4">
+			<h1>Products</h1>
+			<i class="fa fa-chevron-down fa-5x"></i>
+		</div>
+		<div class="accord_content accord4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+		</div>		
+		<div class="accord_label" data-target="accord5">
+			<h1>Promotions</h1>
+			<i class="fa fa-chevron-down fa-5x"></i>
+		</div>
+		<div class="accord_content accord5">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+		</div>
+		<div class="accord_label" data-target="accord6">
+			<h1>Press & Fans</h1>
+			<i class="fa fa-chevron-down fa-5x"></i>
+		</div>
+		<div class="accord_content accord6">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+		</div>
+	</div>
 </div>
 <div class="footer">
 	<ul>
