@@ -32,6 +32,7 @@
 	})
 	//accordion code
 	$(document).on("click", ".accord_label", function() {
+		alert("WHOA!");
 		var element = "." + $(this).attr("data-target");
 		console.log(element);
 		$(this).children("i").toggleClass("turn");
