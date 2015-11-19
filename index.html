@@ -33,12 +33,15 @@
 	})
 	//accordion code
 	$(document).on("click", ".accord_label", function() {
+		alert("WHOA!");
+
 		var element = "." + $(this).attr("data-target");
 		console.log(element);
 		$(this).children("i").toggleClass("turn");
 		$(element).slideToggle();
 	})
-	$(window).on("tap", ".accord_label", function() {
+	$(".accord_label").on("vclick", function() {
+		alert("WHOA!");
 		var element = "." + $(this).attr("data-target");
 		console.log(element);
 		$(this).children("i").toggleClass("turn");
