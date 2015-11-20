@@ -111,18 +111,19 @@
 			-o-transition-duration: 300ms;
 			transition-duration: 300ms;
 		}
+			/*TO BE ADDED TO ICON ON CLICK */
+			.turn {
+				-webkit-transition-duration: 300ms;
+				-moz-transition-duration: 300ms;
+				-o-transition-duration: 300ms;
+				transition-duration: 300ms;
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
 		.accord_label h1 {
 			font-size: 4em;
-		}
-		.turn {
-			-webkit-transition-duration: 300ms;
-			-moz-transition-duration: 300ms;
-			-o-transition-duration: 300ms;
-			transition-duration: 300ms;
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
-			-o-transform: rotate(180deg);
-			transform: rotate(180deg);
 		}
 	.accord_content {
 		display: none;
@@ -153,19 +154,20 @@
 		width: 90%;
 		margin: 20px 50px;
 	}
-	.inner_content p {
-		font-size: 3.8vw;
-	}
+		.inner_content p {
+			font-size: 3.8vw;
+		}
 }
 /*MOBILE RULES*/
 @media screen and (min-width: 1100px) {
+	.header img {
+		margin-left: 10px;
+	}	
 	.main_container {
 		width: 60%;
 	}
 	.content {
 		background-size: 100% 100%;
 	}
-	.header img {
-		margin-left: 10px;
-	}
+
 }
