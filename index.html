@@ -10,9 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$(".lander").fadeIn(750).delay(1000).fadeOut(500, function() {
-			 $(".main_container").fadeIn('750');
-		});
+		$(".lander").delay(1000).fadeOut(750);
 	})
 	$(document).on("click", "#popout_menu", function() {
 		console.log("clicked!");
@@ -47,22 +45,20 @@
 <body>
 <div class="header">
 	<div class="inner_container">
-		<img src="./Static/Images/Logo.png" alt="logo">
+		<img id="header_image" src="./Static/Images/Logo.png" alt="logo">
 		<h3>...a boutique salon west of market street.</h3>
 	</div>
 </div>
-<div class="lander" hidden>
-	<img src="./Static/Images/index_pic.png" alt="welcome_picture">
-</div>
-<div class="inner_container main_container" hidden>
-	<img id="picture_row" src="./Static/Images/pic_row.png" alt="pictures">
+<img class="lander" src="./Static/Images/index_pic.png" alt="welcome_picture">
+<div class="inner_container main_container">
+	<img id="picture_header" src="./Static/Images/full_header.png" alt="pictures">
 	<div class="content">
 		<div id="sidebar" class="hide_on_mobile">
 			<a href="#"><h3>Services</h3></a>
 			<a href="#"><h3>Stylists</h3></a>
 			<a href="#"><h3>Scheduling</h3></a>
 			<a href="#"><h3>Products</h3></a>
-			<a href="#"><h3>Promotions</h3></a>
+			<a href="#"><h3>Policies</h3></a>
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3>Press & Fans</h3></a>
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3><i class="fa fa-facebook-official fa-2x"></i></h3></a>
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3><i class="fa fa-twitter fa-2x"></i></h3></a>
@@ -71,45 +67,46 @@
 			<p>Winslow is a beautiful boutique salon located in downtown Kirkland, Washington on Market Street.</p>
 			<p>Our stylists have come together from various places and experiences, but with the same common thought:</p>
 				<div class="quote">
-					<p><i>To provide our clients with the highest level of service, style that focuses on the individual, and an atmosphere of comfortable luxury.</i></p>
+					<p><i>To provide our clients with the highest level of service, style that focuses on the individual, and an atmosphere of comfortable luxury.</p>
+					<p>Our clients are the reason we are here - <br><span class="indent">without you, this wouldn't be possible!</span></i></p>
 				</div>
-				<p>Our clients are the reason we are here - <br><span class="indent">without you, this wouldn't be possible!</span></p>
+				
 		</div>
 	</div>
 
 	<div class="accordion hide_on_desktop">
 		<div class="accord_label" onclick="" data-target="accord1">
-			<h1>Services <i class="fa fa-chevron-down i1"></i></h1>
+			<i class="fa fa-chevron-down i1"></i><h1>Services </h1>
 		</div>
 		<div class="accord_content accord1">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
 		</div>
 		<div class="accord_label" onclick="" data-target="accord2">
-			<h1>Stylists <i class="fa fa-chevron-down i2"></i></h1>
+			<i class="fa fa-chevron-down i2"></i><h1>Stylists </h1>
 		</div>
 		<div class="accord_content accord2">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
 		</div>		
 		<div class="accord_label" onclick="" data-target="accord3">
-			<h1>Scheduling <i class="fa fa-chevron-down i3"></i></h1>
+			<i class="fa fa-chevron-down i3"></i><h1>Scheduling </h1>
 		</div>
 		<div class="accord_content accord3">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
 		</div>
 		<div class="accord_label" onclick="" data-target="accord4">
-			<h1>Products <i class="fa fa-chevron-down i4"></i></h1>
+			<i class="fa fa-chevron-down i4"></i><h1>Products </h1>
 		</div>
 		<div class="accord_content accord4">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
 		</div>		
 		<div class="accord_label" onclick="" data-target="accord5">
-			<h1>Promotions <i class="fa fa-chevron-down i5"></i></h1>
+			<i class="fa fa-chevron-down i5"></i><h1>Policies </h1>
 		</div>
 		<div class="accord_content accord5">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
 		</div>
 		<div class="accord_label" onclick="" data-target="accord6">
-			<h1>Press & Fans <i class="fa fa-chevron-down i6"></i></h1>
+			<i class="fa fa-chevron-down i6"></i><h1>Press & Fans </h1>
 		</div>
 		<div class="accord_content accord6">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>

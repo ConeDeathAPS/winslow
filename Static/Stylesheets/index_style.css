@@ -1,31 +1,27 @@
 /*INITIAL PICTURE CSS*/
 .lander {
-	position: relative;
-	top: 134px;
-	width: 900px;
-	margin: 0 auto;
+	position: absolute;
+	width: 100%;
+	top: 74px;
 }
 /*DEFINES ALL CONTENT*/
 .inner_container {
-	width: 60%;
-	margin: 0px auto;
-}
-/*DEFINES TOP ROW OF PICTURES*/
-#picture_row {
-	display: block;
-	width: 100%;
+	width: 50%;
 	margin: 0px auto;
 }
 /*DEFINES THE MAIN CONTENT ONLY*/ 
 .main_container {
-	position: relative;
-	top: 98px;
+	margin-top: 113px;
 	z-index: 1;
 	box-shadow: 4px 8px 7px 0px black;
 }
+#picture_header {
+	width: 100%;
+	margin-bottom: -5px;
+	border-bottom: 4px solid rgba(225, 49, 0, 1);
+}
 	#sidebar {
 		width: 20%;
-		margin-top: 3%;
 		display: inline-block;
 		list-style-type: none;
 	}
@@ -37,14 +33,14 @@
 				color: grey;
 			}
 		#sidebar h3 {
-			margin: 30px 0px;
+			margin: 20px 0px;
 			text-align: center;
 			color: white;
 			-webkit-transition-duration: 300ms;
 			-moz-transition-duration: 300ms;
 			-o-transition-duration: 300ms;
 			transition-duration: 300ms;
-			font-size: 1.6em;
+			font-size: 2.0em;
 		}
 			#sidebar h3:last-child {
 				margin-top: 15px;
@@ -69,22 +65,19 @@
 		background-size: 900px 450px;
 		background-repeat: no-repeat;
 		height: 550px;
-		border-bottom: 2px solid rgba(225, 49, 0, 1);
+		padding: 20px;
 	}
 		.inner_content {
 			display: inline-block;
 			width: 74%;
-			padding: 2% 2% 0% 2%;
-			vertical-align: top;
-			margin-top: 2%;
-			box-sizing: border-box;	
+			vertical-align: top;	
 			background-color: rgba(0, 0, 0, .25);
+			padding: 15px;
 		}
 			.inner_content p {
 				margin-bottom: 20px;
 				color: white;
-				font-size: 2em;
-				font-weight: bold;
+				font-size: 1.7em;
 			}
 			.quote {
 				display: block;
@@ -106,6 +99,9 @@
 		border-bottom: 4px solid rgba(81, 53, 24, 1);
 	}
 		.accord_label i {
+			vertical-align: middle;
+			font-size: 4em;
+			float: left;
 			-webkit-transition-duration: 300ms;
 			-moz-transition-duration: 300ms;
 			-o-transition-duration: 300ms;
@@ -123,6 +119,7 @@
 				transform: rotate(180deg);
 			}
 		.accord_label h1 {
+			display: inline-block;
 			font-size: 4em;
 		}
 	.accord_content {
@@ -141,30 +138,48 @@
 	.header {
 		height: 100px;
 	}
+	#header_image {
+		width: 150px;
+	}
+	#picture_header {
+		display: none;
+	}
+	.lander {
+		position: absolute;
+		width: 100%;
+		top: 104px;
+	}
 	.inner_container, .main_container {
 		width: 100%!important;
 	}
 	.main_container {
-		top: 105px;
+		margin-top: 104px;
 	}
 	.content {
 		background-size: 100% 100%;
+		border-bottom: 4px solid rgba(225, 49, 0, 1);
 	}	
 	.inner_content {
-		width: 90%;
-		margin: 20px 50px;
+		width: 96%;
+		margin-right: 0!important;
 	}
 		.inner_content p {
-			font-size: 3.8vw;
+			font-size: 3.4vw;
 		}
 }
 /*MOBILE RULES*/
 @media screen and (min-width: 1100px) {
-	.header img {
+	#header_image {
 		margin-left: 10px;
 	}	
+	.lander {
+		position: absolute;
+		width: 55%;
+		left: 22%;
+	}
 	.main_container {
-		width: 60%;
+		width: 50%;
+		margin-bottom: 100px;
 	}
 	.content {
 		background-size: 100% 100%;
