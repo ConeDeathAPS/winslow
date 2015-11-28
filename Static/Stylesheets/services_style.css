@@ -1,0 +1,39 @@
+.content {
+	background-image: url("../Images/other_content.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+.inner_content {
+	display: inline-block;
+	width: 
+}
+	.column {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 30px;
+	}
+	h1, h3 {
+		color: rgba(225, 49, 0, .8);
+	}
+/*TABLES STYLE*/
+table {
+	margin-left: 30px;
+	width: 100%;
+}
+td {
+	font-size: .8em;
+	font-weight: bold;
+	color: white;
+}
+/*DISCLAIMERS STYLE*/
+.disclaimers {
+	margin-top: 30px;
+	color: white;
+	font-weight: bold;
+	font-size: .7em;
+	text-align: center;
+}
+.disclaimers h3 {
+	font-size: 2rem;
+}

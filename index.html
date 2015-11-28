@@ -43,22 +43,25 @@
 	</script>
 </head>
 <body>
+<!--HEADER BAR-->
 <div class="header">
 	<div class="inner_container">
 		<img id="header_image" src="./Static/Images/Logo.png" alt="logo">
 		<h3>...a boutique salon west of market street.</h3>
 	</div>
 </div>
+<!---->
 <img class="lander" src="./Static/Images/index_pic.png" alt="welcome_picture">
+<!--INNER CONTENT-->
 <div class="inner_container main_container">
-	<!-- <img id="picture_header" src="./Static/Images/full_header.png" alt="pictures"> -->
+	<!-- <img id="picture_header" class="hide_on_mobile" src="./Static/Images/full_header.png" alt="pictures"> -->
 	<div class="content">
 		<div id="sidebar" class="hide_on_mobile">
-			<a href="#"><h3>Services</h3></a>
-			<a href="#"><h3>Stylists</h3></a>
-			<a href="#"><h3>Scheduling</h3></a>
-			<a href="#"><h3>Products</h3></a>
-			<a href="#"><h3>Policies</h3></a>
+			<a href="./views/services.html"><h3>Services</h3></a>
+			<a href="./views/stylists.html"><h3>Stylists</h3></a>
+			<a href="./views/scheduling.html"><h3>Scheduling</h3></a>
+			<a href="./views/products.html"><h3>Products</h3></a>
+			<a href="./views/policies.html"><h3>Policies</h3></a>
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3>Press & Fans</h3></a>
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3><i class="fa fa-facebook-official fa-2x"></i></h3></a>
 			<a href="http://www.facebook.com/pages/Winslow-Salon/110554585635590"><h3><i class="fa fa-twitter fa-2x"></i></h3></a>
@@ -70,7 +73,6 @@
 					<p><i>To provide our clients with the highest level of service, style that focuses on the individual, and an atmosphere of comfortable luxury.</p>
 					<p>Our clients are the reason we are here - <br><span class="indent">without you, this wouldn't be possible!</span></i></p>
 				</div>
-				
 		</div>
 	</div>
 
@@ -79,7 +81,7 @@
 			<i class="fa fa-chevron-down i1"></i><h1>Services </h1>
 		</div>
 		<div class="accord_content accord1">
-			<h1>Salon Services</h1>
+			<h1>Design</h1>
 			<table class="price_table">
 				<tr>
 					<td>Women's Haircut</td>
@@ -90,86 +92,120 @@
 					<td>$40+</td>
 				</tr>
 				<tr>
-					<td>Bang / Neck Trim *</td>
-					<td> $15+</td>
+					<td>Child's Haircut</td>
+					<td>$35+</td>
 				</tr>
 				<tr>
-					<td>Shampoo & Style</td>
-					<td>$40+</td>
+					<td>Bang / Neck Trim</td>
+					<td> $15*</td>
 				</tr>
 				<tr>
-					<td>Occasion Up-style</td>
+					<td>Blowout</td>
+					<td>$45+</td>
+				</tr>
+				<tr>
+					<td>Up-style</td>
 					<td>$60+</td>
 				</tr>
 				<tr>
-					<td>Bridal Style - includes consultation</td>
+					<td>Bridal Style</td>
 					<td>$100+</td>
 				</tr>
-				<tr>
-					<td>Deep conditioning treatment and style</td>
-					<td>$55+_</td>
-				</tr>
-				<tr>
-					<td>Brazilian Blowout</td>
-					<td>$250+</td>
-				</tr>
-				<tr>
-					<td>Extensions (priced by consultation)</td>
-					<td>$~~</td>
-				</tr>
 			</table>
-			<h1>Color Services</h1>
+			<h1>Color</h1>
 			<table class="price_table">
 				<tr>
-					<td>Single process all-over color</td>
+					<td>All-over color</td>
+					<td>$80+</td>
+				</tr>
+				<tr>
+					<td>Men's all-over</td>
+					<td>$50+</td>
+				</tr>
+				<tr>
+					<td>Color retouch</td>
 					<td>$70+</td>
 				</tr>
 				<tr>
-					<td>Single process color retouch</td>
-					<td>$60+</td>
+					<td>Partial highlight</td>
+					<td>$105+</td>
 				</tr>
 				<tr>
-					<td>Partial foil</td>
-					<td>$95+</td>
+					<td>Full highlight</td>
+					<td>$150+</td>
 				</tr>
 				<tr>
-					<td>Full foil</td>
+					<td>Partial Balayage</td>
 					<td>$120+</td>
+				</tr>
+				<tr>
+					<td>Full Balayage</td>
+					<td>$150+</td>
 				</tr>
 				<tr>
 					<td>Double process Blonde</td>
 					<td>$100+</td>
 				</tr>
 				<tr>
-					<td>Balayage Highlights</td>
-					<td>$100+</td>
+					<td>Root Glaze</td>
+					<td>$60+</td>
 				</tr>
 				<tr>
-					<td>Deep conditioning shine treatment</td>
-					<td>$15**</td>
+					<td>Root Glaze add-on</td>
+					<td>$20+</td>
+				</tr>
+				<tr>
+					<td>Toner</td>
+					<td>$60+</td>
+				</tr>
+				<tr>
+					<td>Toner add-on</td>
+					<td>$20+</td>
+				</tr>
+				<tr>
+					<td>Gloss</td>
+					<td>$60+</td>
 				</tr>
 			</table>
-			<h1>Texture Servces & Reconditioning</h1>
-			<table class="price_table">
-				<tr>
-					<td>Brazilian Blowout</td>
-					<td>$250+</td>
-				</tr>
-				<tr>
-					<td>Brazilian Keratin smoothing treatment</td>
-					<td>$275+</td>
-				</tr>
-				<tr>
-					<td>Japanese permanent straightening</td>
-					<td>$500+</td>
-				</tr>
-				<tr>
-					<td>Permanent wave</td>
-					<td>$100+</td>
-				</tr>
-			</table>
-			<p>*this service is always complimentary for existing clients</p>
-			<p>**when added to any color treatment service</p>
+			<h1>Texture & Reconditioning</h1>
+				<table class="price_table">
+					<tr>
+						<td>Brazilian Blowout</td>
+						<td>$300+</td>
+					</tr>
+					<tr>
+						<td>Keratin smoothing</td>
+						<td>$300+</td>
+					</tr>
+					<tr>
+						<td>Keratin smoothing EXPRESS</td>
+						<td>$150+</td>
+					</tr>
+					<tr>
+						<td>Permanent wave</td>
+						<td>$100+</td>
+					</tr>				
+					<tr>
+						<td>Deep Conditioning</td>
+						<td>$50+</td>
+					</tr>
+					<tr>
+						<td>Deep Conditioning add-on</td>
+						<td>$20+</td>
+					</tr>
+					<tr>
+						<td>Olaplex</td>
+						<td>$70+</td>
+					</tr>
+					<tr>
+						<td>Olaplex add-on</td>
+						<td>$40+</td>
+					</tr>
+					</table>
+			<h1>Lash Extensions</h1>
+			<p>Coming soon!</p>
+			<p>*This service is always complimentary for existing clients</p>
+			<p>PLEASE CALL FOR PRICING ON SELECT STYLISTS</p>
 			<h3>Call to schedule your next Winslow Salon experience!</h3>
 		</div>
 		<div class="accord_label" onclick="" data-target="accord2">
@@ -235,8 +271,9 @@
 		</div>
 	</div>
 </div>
+<!--FOOTER BAR-->
 <div class="footer">
-<p>Please call to make an appointment!</p>
+<p>Please call toreserve your appointment!</p>
 	<ul>
 		<li>609 Market St.</li>
 		<li><img src="./Static/Images/bullet.png" alt="bullet"></li>
