@@ -87,10 +87,15 @@ body {
 	margin: 0px auto;
 }
 .main_container {
+	width: 50%;
 	margin-top: 113px;
 	z-index: 1;
 	box-shadow: 4px 8px 7px 0px black;
 }
+	.main_container img {
+		width: 100%;
+		margin-bottom: -5px;
+	}
 #picture_header {
 	width: 100%;
 	margin-bottom: -5px;
@@ -149,6 +154,9 @@ body {
 		/*font-size: 2em;*/
 		margin-top: 15px;
 	}
+	.inner_container, .main_container {
+		width: 70%;
+	}
 }
 @media screen and (max-width: 1460px) {
 	.header h3 {
@@ -165,7 +173,6 @@ body {
 		margin-left: 10px;
 	}
 	.main_container {
-		width: 50%;
 		margin-bottom: 100px;
 	}
 }

@@ -7,20 +7,15 @@
 .inner_content {
 	display: inline-block;
 }
-	.inner_content h3 a {
-		font-size: 1.5em;
-		color: rgba(225, 49, 0, .8);
+	.inner_content p {
+		font-size: 1.3em;
+		color: white;
+		margin-bottom: 20px;
+	}
+	.policy_title {
+		color: rgba(225, 49, 0, 1);
+	}
 
-	}
-	a {
-		text-decoration: none;
-		color: white;
-	}
-	.stylist_table {
-		width: 80%;
-		color: white;
-		padding: 20px;
-	}
 .active {
 	color: grey!important;
 }

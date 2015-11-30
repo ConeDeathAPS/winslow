@@ -6,7 +6,6 @@
 }
 .inner_content {
 	display: inline-block;
-	width: 
 }
 	.column {
 		display: inline-block;
@@ -36,4 +35,7 @@ td {
 }
 .disclaimers h3 {
 	font-size: 2rem;
+}
+.active {
+	color: grey!important;
 }

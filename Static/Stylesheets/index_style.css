@@ -67,7 +67,7 @@
 		display: none;
 		background-color: rgba(81, 53, 24, 1);
 		box-sizing: border-box;
-		padding: 20px;
+		padding: 30px;
 	}
 		.accord_content p {
 			color: white;
@@ -76,6 +76,10 @@
 		.accord_content h1 {
 			font-size: 5em;
 			color: rgba(225, 49, 0, 1);
+		}
+		.accord_content img {
+			display: block;
+			margin: 0px auto;
 		}
 /*PRICING STYLE*/
 .price_table {
@@ -93,6 +97,23 @@
 		font-size: 3em;
 		text-align: center;
 		color: rgba(225, 49, 0, 1);
+		margin: 20px auto;
+	}
+/*STYLIST STYLE*/
+.accord2 h3 a {
+	color: rgba(225, 49, 0, 1);
+	font-size: 2em;
+	margin-top: 20px;
+}
+	.accord2 a {
+		text-decoration: none;
+		color: white;
+	}
+	.stylist_table {
+		width: 80%;
+		color: white;
+		padding: 20px;
+		font-size: 1.5em;
 		margin: 20px auto;
 	}
 /*SCHEDULING STYLE*/
@@ -118,6 +139,42 @@
 	.hours_table {
 		margin-bottom: 30px;
 	}
+/*PRODUCTS STYLE*/
+	.accord4 .product {
+		display: inline-block;
+	}
+	.accord4 .product_header {
+		color: rgba(225, 49, 0, 1);
+		text-align: center;
+		font-size: 3em;
+	}
+	.accord4 .product p {
+		font-size: .9em;
+		color: white;
+		margin-bottom: 10px;
+		padding-left: 20px;
+	}
+	.accord4 .product h2 {
+		font-size: 2em;
+		color: white;
+	}
+	.accord4 .product .column {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
+	.accord4 .product .column p {
+		font-size: 1.9em;
+	}
+/*POLICIES STYLE*/
+.accord5 p {
+	font-size: 1.3em;
+	color: white;
+	margin-bottom: 20px;
+}
+	.policy_title {
+		color: rgba(225, 49, 0, 1);
+	}
 /*MEDIA RULES*/
 /*DESKTOP RULES*/
 @media screen and (max-width: 1100px) {
@@ -132,7 +189,7 @@
 	}	
 	.inner_content p {
 		font-size: 3.4vw;
-	}
+	}		
 }
 /*MOBILE RULES*/
 @media screen and (min-width: 1100px) {
@@ -141,12 +198,7 @@
 		width: 55%;
 		left: 22%;
 	}
-	.main_container {
-		width: 50%;
-		margin-bottom: 100px;
-	}
 	.content {
 		background-size: 100% 100%;
 	}
-
 }

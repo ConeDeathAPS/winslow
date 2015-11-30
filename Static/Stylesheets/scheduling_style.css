@@ -1,0 +1,49 @@
+.content {
+	background-image: url("../Images/other_content.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 20px;
+}
+.inner_content {
+	display: inline-block;
+}
+	.inner_content h1 {
+		color: rgba(225, 49, 0, 1);
+		font-size: 3em;
+	}
+	.inner_content h3 {
+		font-family: 'Normal';
+		font-size: 1.2em;
+		color: white;
+		margin-bottom: 30px;
+	}
+	.inner_content h2 {
+		font-size: 2em;
+		color: rgba(225, 49, 0, 1);
+		margin-bottom: 20px;
+	}	
+	.phone {
+		font-family: 'Heading'!important;
+		color: rgba(225, 49, 0, 1)!important;
+		font-size: 1.4em!important;
+		margin-bottom: 20px;
+	}
+	.address {
+		font-size: 1.2em;
+		padding-left: 40px;
+		color: white;
+	}
+	.hours_table * {
+		color: white;
+		font-size: 1em;
+		font-family: 'Normal';
+	}
+	.hours_table {
+		margin-bottom: 30px;
+	}
+	.inner_content p {
+		color: white;
+	}
+.active {
+	color: grey!important;
+}

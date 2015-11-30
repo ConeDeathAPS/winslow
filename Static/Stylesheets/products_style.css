@@ -1,0 +1,34 @@
+.content {
+	background-color: rgba(81, 53, 24, 1);
+	padding: 20px;
+}
+.inner_content {
+	display: inline-block;
+}
+	.product {
+		display: inline-block;
+	}
+	.product_header {
+		color: rgba(225, 49, 0, 1);
+		text-align: center;
+		font-size: 3em;
+	}
+	.product p {
+		font-size: .9em;
+		color: white;
+		margin-bottom: 10px;
+		padding-left: 20px;
+	}
+	.product h2 {
+		font-size: 2em;
+		color: white;
+	}
+	.column {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+	}
+
+.active {
+	color: grey!important;
+}
