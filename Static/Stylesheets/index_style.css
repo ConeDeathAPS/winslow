@@ -24,6 +24,7 @@
 				display: block;
 				margin: 0 auto;
 				width: 80%;
+				font-size: .95em;
 			}
 			.indent {
 				padding-left: 80px;
@@ -81,6 +82,22 @@
 			display: block;
 			margin: 0px auto;
 		}
+.desktop {
+	position: relative;
+	bottom: 150px;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 20px 30px;
+	vertical-align: top;
+	border: none;
+	display: block;
+	margin: 20px auto;
+	background-color: rgba(81, 53, 24, 1);
+}
+	.desktop:hover {
+		background-color: rgba(225, 49, 0, 1);
+	}
 /*PRICING STYLE*/
 .price_table {
 	margin: 0px auto;
@@ -100,21 +117,29 @@
 		margin: 20px auto;
 	}
 /*STYLIST STYLE*/
-.accord2 h3 a {
-	color: rgba(225, 49, 0, 1);
+.accord2 h3 {
 	font-size: 2em;
-	margin-top: 20px;
+	color: white;
+	font-family: "Heading";
+	text-align: center;
 }
-	.accord2 a {
-		text-decoration: none;
-		color: white;
-	}
-	.stylist_table {
-		width: 80%;
-		color: white;
-		padding: 20px;
+.stylist_table {
+	width: 90%;
+	color: white;
+	padding: 20px;
+	font-size: 1.5em;
+	margin: 20px auto;
+}
+	.stylist_table a {
+		color: rgba(225, 49, 0, 1);
+		font-family: "Heading";
 		font-size: 1.5em;
-		margin: 20px auto;
+	}
+	.stylist_table td:first-child {
+		border-bottom: 2px inset white;
+	}
+	.stylist_table td:last-child {
+		padding-left: 10px;
 	}
 /*SCHEDULING STYLE*/
 .accord3 h3 {
@@ -173,6 +198,8 @@
 	margin-bottom: 20px;
 }
 	.policy_title {
+		font-family: "Heading";
+		font-size: 1.5em;
 		color: rgba(225, 49, 0, 1);
 	}
 /*MEDIA RULES*/
@@ -186,10 +213,10 @@
 	.content {
 		background-size: 100% 100%;
 		border-bottom: 4px solid rgba(225, 49, 0, 1);
-	}	
-	.inner_content p {
-		font-size: 3.4vw;
 	}		
+	.inner_content {
+		font-size: 1.5vw!important;
+	}
 }
 /*MOBILE RULES*/
 @media screen and (min-width: 1100px) {

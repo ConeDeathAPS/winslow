@@ -7,19 +7,28 @@
 .inner_content {
 	display: inline-block;
 }
-	.inner_content h3 a {
-		font-size: 1.5em;
-		color: rgba(225, 49, 0, .8);
-
-	}
-	a {
-		text-decoration: none;
-		color: white;
-	}
 	.stylist_table {
-		width: 80%;
+		width: 90%;
 		color: white;
 		padding: 20px;
+		margin: 0 auto;
+	}
+	.stylist_table a {
+		color: rgba(225, 49, 0, .8);
+		font-family: "Heading";
+		font-size: 1.5em;
+	}
+	.stylist_table td:first-child {
+		border-bottom: 2px inset white;
+	}
+	.stylist_table td:last-child {
+		padding-left: 10px;
+	}
+	h3 {
+		font-family: "Heading";
+		font-size: 2em;
+		color: white;
+		text-align: center;
 	}
 .active {
 	color: grey!important;

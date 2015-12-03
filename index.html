@@ -3,30 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="Winslow Salon" description="A boutique salon west of market street.">
+	<meta name="viewport">
 	<title>Winslow Salon</title>
 	<link rel="stylesheet" type="text/css" href="./Static/Stylesheets/index_style.css">
 	<link rel="stylesheet" type="text/css" href="./Static/Stylesheets/global_style.css">
+	<link rel="stylesheet" type="text/css" id="mobileStyle" href="./Static/Stylesheets/mobile_style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$(".lander").delay(1000).fadeOut(750);
+		$(".lander").delay(2000).fadeOut(750);
 	})
-	$(document).on("click", "#popout_menu", function() {
-		console.log("clicked!");
-		$(this).toggleClass("turn");
-		$(this).removeClass("inactive");
-		if ($("#side_menu").width() > 50) {
-			$("#popout_menu").animate({left: "5px"}, 300, "swing");
-			$("#inner_menu").fadeOut('fast', function() {
-				$("#side_menu").animate({width: "40px"}, 300, "swing");
-			})
-		} else {
-			$("#popout_menu").animate({left: "93%"}, 300, "swing");			
-			$("#side_menu").animate({width: "400px"}, 300, "swing", function() {
-				$("#inner_menu").fadeIn('fast');
-			});			
-		}
+	$(document).on("click", ".desktop", function() {
+		$("#mobileStyle").remove();
+		$(".accordion").css("display", "none");
+		$(".desktop").css("display", "none");
 	})
 	//accordion code
 	$(document).on("click", ".accord_label", function() {
@@ -68,13 +59,13 @@
 		<div class="inner_content">
 			<p>Winslow is a beautiful boutique salon located in downtown Kirkland, Washington on Market Street.</p>
 			<p>Our stylists have come together from various places and experiences, but with the same common thought:</p>
-				<div class="quote">
-					<p><i>To provide our clients with the highest level of service, style that focuses on the individual, and an atmosphere of comfortable luxury.</p>
-					<p>Our clients are the reason we are here - <br><span class="indent">without you, this wouldn't be possible!</span></i></p>
-				</div>
+			<div class="quote">
+				<p><i>To provide our clients with the highest level of service, style that focuses on the individual, and an atmosphere of comfortable luxury.</p>
+				<p>Our clients are the reason we are here - <br><span class="indent">without you, this wouldn't be possible!</span></i></p>
+			</div>
 		</div>
 	</div>
-	<img src="./Static/Images/welcome_images.png">
+	<img src="./Static/Images/stylists_header.png">
 	<div class="accordion hide_on_desktop">
 		<div class="accord_label" onclick="" data-target="accord1">
 			<i class="fa fa-chevron-down i1"></i><h1>Services </h1>
@@ -84,15 +75,15 @@
 			<h1>Design</h1>
 			<table class="price_table">
 				<tr>
-					<td>Women's Haircut</td>
+					<td>Womens Haircut</td>
 					<td>$60+</td>
 				</tr>
 				<tr>
-					<td>Men's Haircut</td>
+					<td>Mens Haircut</td>
 					<td>$40+</td>
 				</tr>
 				<tr>
-					<td>Child's Haircut</td>
+					<td>Childs Haircut</td>
 					<td>$35+</td>
 				</tr>
 				<tr>
@@ -108,7 +99,7 @@
 					<td>$60+</td>
 				</tr>
 				<tr>
-					<td>Bridal Style</td>
+					<td>Bridal Style -- includes consultation</td>
 					<td>$100+</td>
 				</tr>
 			</table>
@@ -119,7 +110,7 @@
 						<td>$80+</td>
 					</tr>
 					<tr>
-						<td>Men's all-over</td>
+						<td>Mens all-over</td>
 						<td>$50+</td>
 					</tr>
 					<tr>
@@ -230,7 +221,7 @@
 				</tr>
 				</table>
 			<p>*This service is always complimentary for existing clients</p>
-			<p>PLEASE CALL FOR PRICING ON SELECT STYLISTS</p>
+			<p>+Pricing varies depending on stylist</p>
 			<h3>Call to schedule your next Winslow Salon experience!</h3>
 		</div>
 		<div class="accord_label" onclick="" data-target="accord2">
@@ -238,66 +229,69 @@
 		</div>
 		<div class="accord_content accord2">
 		<img src="./Static/Images/stylists_header.png">
-
-			<h3><a href="mailto:ashley@winslowsalon.com">Ashley Winslow Newbury -- Owner</a></h3>
 			<table class="stylist_table">
 				<tr>
+					<td><a href="mailto:ashley@winslowsalon.com">Ashley Winslow Newbury -- Owner</a></td>
+					<td>Owner/Stylist</td>
+				</tr>
+				<tr>
 					<td><a href="mailto:emillienne@winslowsalon.com">Emillienne</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:carrie@winslowsalon.com">Carrie</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:jackie@winslowsalon.com">Jackie</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:april@winslowsalon.com">April</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:lee@winslowsalon.com">Lee</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:kristina@winslowsalon.com">Kristina</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:jenny@winslowsalon.com">Jenny</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:holly@winslowsalon.com">Holly</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:meiling@winslowsalon.com">Meiling</a></td>
-					<td>Stylist</td>
+					<td>Designer/Lash Extensions</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:helen@winslowsalon.com">Helen</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>																		
 				<tr>
 					<td><a href="mailto:kristin@winslowsalon.com">Kristin</a></td>
-					<td>Stylist</td>
+					<td>Designer</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:lauren@winslowsalon.com">Lauren</a></td>
-					<td>Stylist</td>
+					<td>Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:cheraea@winslowsalon.com">Cheraea</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>
 				<tr>
 					<td><a href="mailto:rachelle@winslowsalon.com">Rachelle</a></td>
-					<td>Stylist</td>
+					<td>Designer/Colorist</td>
 				</tr>	
 			</table>
+			<h3>Stylist bio's coming soon!</h3>
 		</div>		
 		<div class="accord_label" onclick="" data-target="accord3">
 			<i class="fa fa-chevron-down i3"></i><h1>Scheduling </h1>
@@ -343,20 +337,16 @@
 					</tr>
 				</table>
 			</div>
-			<p>Need some more info? Email us at info@thewinslowsalon.com</p>
+			<p>Questions? Email us at info@thewinslowsalon.com</p>
 		</div>
 		<div class="accord_label" onclick="" data-target="accord4">
 			<i class="fa fa-chevron-down i4"></i><h1>Products </h1>
 		</div>
 		<div class="accord_content accord4">
+			<img src="../Static/Images/products_images.png">
+			<br>
 			<div class="product">
-				<h1 class="product_header">Voluspa</h1>
-				<p>To burn a Voluspa candle is to be introduced to a world of excellence in fragrance and candle light that delights the senses and adds luxe to everyday living.</p>
-				<p>Fueled by a love for art, fragrance and elegant illumination, Troy and Traci Arntsen created their first scented candle in their kitchen in 1999. Combining Traci's expert nose and knowledge of botany with Troy's engineering technical background, the duo is credited with developing clean burning and potently fragrant candles renowned in the industry. Voluspa's creamy Cocunut wax blend enhances fragrance throw, burns ultra clean, and delights consumers world wide.</p>
-				<p>Finding their niche by creating striking packaging and extraordinary scents, Voluspa home fragrance products are found in prestigious retailers around the world and have become a staple in the homes of Hollywood's elite. Regularly featured in editorial articles written for beauty, fashion and home magazines, Voluspa has become a household name.</p>
-			</div>
-			<div class="product">
-				<h1 class="product_header">Oribe</h1>
+				<h1 class="product_header">ORIBE</h1>
 				<h2>The Brand Story</h2>
 				<p>Oribe Hair Care was founded by renowned editorial and celebrity hairstylist Oribe and beauty industry veterans Daniel Kaner and Tev Finger with the goal of creating a new kind of hair company, one that was designed with the most talented salon professionals and the most discriminating customers in mind. When developing the line, we didn’t want to compromise on any detail. We leveraged skin care technology and natural actives to deliver high-performance, treatment-based products—all while never forgetting that healthy hair is the underpinning for sexy, glamorous styling. Each product has been tested at length on set, backstage and in the salon to ensure that it delivers results, leaving us with a best-in-class collection that truly meets the needs of the hair-obsessed.</p>
 				<h2>The Fragrance</h2>
@@ -372,21 +362,27 @@
 				<div class="column">
 					<p>And everything is formulated without parabens, sulfates (SLS or SLES), mineral oil and petrolatum. They are all vegetarian, cruelty-free, gluten-free and color-safe. R+Co is about an experience. The packaging and fragrances were designed to enhance that experience and evoke a feeling, place, style or attitude. You’ll know just by looking at a bottle or tube what a product is meant to do, and the subtle yet sophisticated fragrances—meant for both men and women—are as individual as the members of our collective. We work to reduce the amount of physical material used in our packaging by eliminating unnecessary components. A large majority of the retail packaging can be recycled; check with your local recycling center.</p>
 				</div>
+			</div>			
+			<div class="product">
+				<h1 class="product_header">VOLUSPA</h1>
+				<p>To burn a Voluspa candle is to be introduced to a world of excellence in fragrance and candle light that delights the senses and adds luxe to everyday living.</p>
+				<p>Fueled by a love for art, fragrance and elegant illumination, Troy and Traci Arntsen created their first scented candle in their kitchen in 1999. Combining Traci's expert nose and knowledge of botany with Troy's engineering technical background, the duo is credited with developing clean burning and potently fragrant candles renowned in the industry. Voluspa's creamy Cocunut wax blend enhances fragrance throw, burns ultra clean, and delights consumers world wide.</p>
+				<p>Finding their niche by creating striking packaging and extraordinary scents, Voluspa home fragrance products are found in prestigious retailers around the world and have become a staple in the homes of Hollywood's elite. Regularly featured in editorial articles written for beauty, fashion and home magazines, Voluspa has become a household name.</p>
 			</div>
 		</div>		
 		<div class="accord_label" onclick="" data-target="accord5">
 			<i class="fa fa-chevron-down i5"></i><h1>Policies </h1>
 		</div>
 		<div class="accord_content accord5">
-			<p><span class="policy_title">Return policy - </span>Winslow Salon guarantees the satisfaction of all products. Should a product not meet your expectations, we will exchange the product for another product of equal value. No refunds will be given.</p>
-			<p><span class="policy_title">Cancellation Policy - </span>Please cancel or schedule your appointment48 hours prior to your scheduled service to avoid a 50% charge of total service price. A credit card will be required to reserve your appointment.</p>
-			<p><span class="policy_title">Satisfaction Policy - </span>Winslow Salon guarantees your satisfaction for 10 days after your date of service. If you are unsatisfied with your service, Winslow would like to take the opportunity to see you for a follow up correction appointment that is complimentary. There will be no refunds.</p>
+			<p><span class="policy_title">Return policy - </span>Winslow Salon guarantees the satisfaction of all products. Should a product not meet your expectations, we will exchange that product for another of equal value. No refunds will be given.</p>
+			<p><span class="policy_title">Cancellation Policy - </span>Please cancel or schedule your appointment 48 hours prior to your scheduled service to avoid a 50% charge of total service price. A credit card will be required to reserve your appointment.</p>
+			<p><span class="policy_title">Satisfaction Policy - </span>Winslow Salon guarantees your satisfaction for 14 days after the date of service. If you are unsatisfied the results, Winslow would like to take the opportunity to see you for a complimentary correction appointment. There will be no refunds.</p>
 		</div>
 	</div>
 </div>
+<button class="hide_on_desktop desktop">Show desktop version</button>
 <!--FOOTER BAR-->
 <div class="footer">
-<p>Please call toreserve your appointment!</p>
 	<ul>
 		<li>609 Market St.</li>
 		<li><img src="./Static/Images/bullet.png" alt="bullet"></li>
