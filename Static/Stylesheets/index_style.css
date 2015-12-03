@@ -110,7 +110,7 @@
 		font-size: 1.3em;
 	}
 	.accord1 h3 {
-		font-family: 'Normal';
+		font-family: 'Heading';
 		font-size: 3em;
 		text-align: center;
 		color: rgba(225, 49, 0, 1);
@@ -120,7 +120,7 @@
 .accord2 h3 {
 	font-size: 2em;
 	color: white;
-	font-family: "Heading";
+	font-family: "Normal";
 	text-align: center;
 }
 .stylist_table {
@@ -143,7 +143,7 @@
 	}
 /*SCHEDULING STYLE*/
 .accord3 h3 {
-	font-family: 'Normal';
+	font-family: 'Heading';
 	font-size: 2em;
 	color: white;
 	margin-bottom: 30px;
